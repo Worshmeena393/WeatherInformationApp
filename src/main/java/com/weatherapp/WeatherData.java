@@ -1,7 +1,8 @@
 package com.weatherapp;
 
 /**
- * Represents the weather information returned by the OpenWeatherMap API.
+ * Represents the current weather information returned by the OpenWeatherMap API
+ * (or generated as mock data when no real API key is configured).
  */
 public class WeatherData {
     private String city;
@@ -12,9 +13,11 @@ public class WeatherData {
     private final double windSpeed;
     private final String condition;
     private final String description;
+    private final String icon;
 
     public WeatherData(String city, String country, double temperature, double feelsLike,
-                       int humidity, double windSpeed, String condition, String description) {
+                       int humidity, double windSpeed, String condition, String description,
+                       String icon) {
         this.city = city;
         this.country = country;
         this.temperature = temperature;
@@ -23,6 +26,7 @@ public class WeatherData {
         this.windSpeed = windSpeed;
         this.condition = condition;
         this.description = description;
+        this.icon = icon == null || icon.isBlank() ? "01d" : icon;
     }
 
     public String getCity() {
@@ -55,5 +59,13 @@ public class WeatherData {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public boolean isNightIcon() {
+        return icon != null && icon.endsWith("n");
     }
 }
