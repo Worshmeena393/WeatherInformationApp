@@ -1,0 +1,77 @@
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.title {
+    -fx-font-size: 30px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #16324f;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #4f647c;
+}
+
+.search-button {
+    -fx-background-color: #2b7fff;
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-background-radius: 10;
+    -fx-padding: 0 18 0 18;
+    -fx-cursor: hand;
+}
+
+.search-button:hover {
+    -fx-background-color: #1f66d2;
+}
+
+.result-card {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-border-color: #dce7f6;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 12, 0.2, 0, 4);
+}
+
+.city-country {
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #17304a;
+    -fx-padding: 0 0 4 0;
+}
+
+.temperature {
+    -fx-font-size: 44px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #2b7fff;
+}
+
+.detail {
+    -fx-font-size: 14px;
+    -fx-text-fill: #42566b;
+}
+
+.status-label {
+    -fx-font-size: 13px;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.status-loading {
+    -fx-text-fill: #4a5f73;
+}
+
+.status-success {
+    -fx-text-fill: #1e8453;
+}
+
+.status-error {
+    -fx-text-fill: #c2410c;
+}
+
+.footer {
+    -fx-font-size: 12px;
+    -fx-text-fill: #6b7a8f;
+}
